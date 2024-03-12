@@ -40,8 +40,16 @@ canvas.height = innerHeight;
 // // Ainsi, Math.PI * 2 est utilisé pour indiquer un angle de 360 degrés, ce qui signifie que l'arc couvre tout le cercle. Cela permet de dessiner un cercle complet avec context.arc.
 
 // -------------TEXTE ------------------
-context.strokeStyle = 'red';
-context.font = '48px serif ';
-context.fillStyle = 'blue';
-context.strokeText('Hello world', 100, 100);
-context.fillText('Hello world', 100, 100);
+// context.strokeStyle = 'red';
+// context.font = '48px serif ';
+// context.fillStyle = 'blue';
+// context.strokeText('Hello world', 100, 100);
+// context.fillText('Hello world', 100, 100);
+
+// -------------IMAGE----------------------
+let img = new Image();
+img.src = 'spaceship.png';
+
+img.onload = () => {
+  context.drawImage(img, 100, 100);
+};
