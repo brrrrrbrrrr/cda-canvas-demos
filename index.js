@@ -5,11 +5,11 @@ const context = canvas.getContext('2d');
 canvas.width = innerWidth;
 canvas.height = innerHeight;
 
-// Carré remplie
+// Carré remplie (x, y, width, height)
 context.fillRect(25, 25, 100, 100);
 
-// Efface la zone spécifiée
-context.clearRect(45, 45, 60, 60);
+// // Efface la zone spécifiée
+// context.clearRect(45, 45, 60, 60);
 
-// Dessiné un contour
-context.strokeRect(50, 50, 50, 50);
+// // Dessiné un contour
+// context.strokeRect(50, 50, 50, 50);
